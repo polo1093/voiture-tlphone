@@ -16,5 +16,13 @@ let connected2 = 0
 serial.redirectToUSB()
 // boucle
 basic.forever(function () {
-	
+    basic.showLeds(`
+        # . . . #
+        . # . . #
+        . . # . #
+        . . . # #
+        # # # # #
+        `)
+    led.enable(true)
+    led.setDisplayMode(DisplayMode.BlackAndWhite)
 })
